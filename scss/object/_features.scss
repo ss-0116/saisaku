@@ -1,0 +1,85 @@
+.features {
+    padding-top: 80px;
+    .features-cont {
+        padding-top: 60px;
+    }
+    .features-item {
+        display: flex;
+        flex-flow: column-reverse;
+        color: cl(white);
+        + .features-item {
+            padding-top: 62px;
+            @include overTab {
+                padding-top: 0;
+            }
+        }
+        &:nth-child(odd) {
+            @include overTab {
+                flex-direction: row-reverse;
+            }
+                .image {
+                    @include overTab {
+                        margin-right: 40px;
+                    }
+                }
+                .text {
+                    @include overTab {
+                        margin-right: 40px;
+                    }
+                }
+        }
+        &:nth-child(even) {
+            @include overTab {
+                //↓flex-flow: column-reverse;を初期化
+                flex-flow: row;
+            }
+            .image {
+                @include overTab {
+                    margin-left: 41px;
+
+                }
+            }
+            .text {
+                @include overTab {
+                    margin-left: 40px;
+                }
+            }
+        }
+        .text {
+            padding-right: 28px;
+            padding-left: 27px;
+            margin-top: 40px;
+            @include overTab {
+                padding-left: 0;
+                padding-right: 0;
+                flex: 1;
+            }
+        }
+        .title {
+            color: cl(beige);
+            font-size: 18px;
+            @include overTab {
+            font-size: 28px;
+            margin-top: 10px;
+            }
+        }
+        .desk {
+            margin-top: 20px;
+            font-size: 16px;
+            @include overTab {
+                font-size: 18px;
+            }
+        }
+        .image {
+            @include overTab {
+                width: 50%;
+            }
+        }
+    }
+    .features-link {
+        padding-top: 30px;
+        a {
+            margin: 0 auto;
+        }
+    }
+}

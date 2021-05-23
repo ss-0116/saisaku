@@ -1,0 +1,41 @@
+.footer {
+    background-color: cl(primary);
+    color: cl(white);
+    border-top: 1px solid cl(grey);
+
+    .nav-list  {
+        padding-top: 60px;
+        padding-bottom: 60px;
+        @include overTab {
+            display: flex;
+            justify-content: center;
+        }
+    }
+
+    .nav-item {
+        text-align: center;
+
+        @include overTab {
+        }
+        +.nav-item {
+            margin-top: 20px;
+            @include overTab{
+                margin-left: 35px;
+                margin-top: 0;
+            }
+        }
+        a {
+            font-size: 16px;
+            color: cl(white);
+        }
+    }
+
+    .footer-logo {
+        width: 188px;
+        // ※height: 70px;の設定は不要
+        margin: 0 auto;
+    }
+    .copy-right {
+        text-align: center;
+    }
+}

@@ -1,0 +1,41 @@
+.faq {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    .faq-cont {
+        margin-top: 59px;
+        padding-right: 30px;
+        padding-left: 30px;
+    }
+    .faq-list {
+        // min-width: 900px;
+        margin-left: auto;
+        margin-right: auto;
+        @include overTab {
+            width: percentage(907/1280);
+        }
+    }
+    .faq-item {
+        >a {
+            display: block;
+            background-color: cl(white);
+            border: 1px solid #E5E5E5;
+            // height: 70px;
+            padding: 14px;
+            // border: 5px solid red;
+            @include overTab {
+                padding-top: 20px;
+                padding-bottom: 20px;
+                text-align: center;
+            }
+        }
+        .detail {
+            background-color: cl(lightgray);
+            display: none;
+            padding: 14px;
+            border-bottom: 1px solid #E5E5E5;
+            @include overTab {
+                padding: 25px 50px;
+            }
+        }
+    }
+}

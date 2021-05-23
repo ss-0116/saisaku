@@ -1,0 +1,27 @@
+.top {
+    background-image: url(../image/top-mv_sp.png);
+    background-position: center;
+    background-size: cover;
+    height: 674px;
+    position: relative;
+    margin-top: 100px;
+    @include overTab {
+        //↓pc用の画像
+        background-image: url(../image/top-bg.png);
+    }
+    .top-title {
+        color: cl(white);
+        text-align: center;
+        width: 100%;
+        font-size: 35px;
+        // ＜中央寄せにするやり方＞
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translateY(-50%) translateX(-50%);
+        ////////////////////////
+        @include overTab {
+            font-size: 50px;
+        }
+    }
+}

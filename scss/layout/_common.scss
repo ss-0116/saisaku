@@ -1,0 +1,41 @@
+.cmn-section {
+    &.-black {
+        background-color: cl(black);
+    }
+}
+
+.cmn-title {
+    text-align: center;
+    .main {
+        font-size: 32px;
+        color: cl(white);
+        display: block;
+    }
+    .sub {
+        font-size: 20px;
+        @include TimesNewRoman;
+        color: cl(white);
+        display: block;
+        //↓大文字にするプロパティ
+        text-transform: capitalize;
+        margin-top: 34px;
+        &.-faq {
+            //↓全て大文字にするプロパティ
+            text-transform: uppercase;
+        }
+    }
+}
+
+.cmn-link {
+    a {
+        color: cl(white);
+        background-color: cl(gold);
+        width: 155px;
+        height: 37px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 8px;
+        font-size: 14px;
+    }
+}

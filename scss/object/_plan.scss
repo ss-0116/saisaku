@@ -1,0 +1,104 @@
+.plan {
+    .inner {
+        padding-top: 80px;
+    }
+
+}
+
+.rec {
+    margin-top: 60px;
+    .rec-slick {
+    }
+    .rec-item {
+        display: flex;
+        flex-flow: column-reverse;
+        border-radius: 8px;
+        overflow: hidden;
+        margin-left: 26px;
+        margin-right: 26px;
+        @include overTab {
+            margin-left: 13px;
+            margin-right: 13px;
+        }
+        .text {
+            background-color: cl(white);
+            padding: 25px 25px 50px 25px;
+        }
+
+        .title {
+            color: (text);
+        }
+        .price {
+            margin-top: 60px;
+            color: cl(text);
+            > span {
+                color: cl(red)
+            }
+        }
+        .image {
+        }
+    }
+}
+
+.service {
+    .service-wrap {
+        padding-top: 80px;
+        @include overTab {
+        }
+    }
+
+    .service-list {
+        padding-right: 40px;
+        padding-left: 40px;
+        @include overTab {
+            display: flex;
+        }
+    }
+
+    .service-item {
+        display: flex;
+        flex-flow: column-reverse;
+        background-color: cl(lightgrey);
+        padding-bottom: 80px;
+        @include overTab {
+            width: percentage(390 / 1200);
+        }
+        //↓+は二つ目以降を表す
+        + .service-item {
+            margin-top: 30px;
+            @include overTab {
+                margin-left: 20px;
+                margin-top: 0;
+            }
+        }
+        .text {
+            padding-left: 20px;
+            padding-right: 20px;
+
+        }
+        .title {
+            margin-top: 10px;
+            font-size: 28px;
+            text-align: center;
+        }
+
+        .desc {
+            margin-top: 40px;
+            font-size: 18px;
+        }
+
+        .image {
+            width: 160px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+}
+
+
+
+
+
+
+
+
